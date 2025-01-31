@@ -1,13 +1,648 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
     <title>Nature's Platter</title>
 </head>
-<body>
-    
+
+<body class="sora">
+    <main class="container mx-auto ">
+        <!-- Navigation bar -->
+        <section class="flex justify-between items-center my-9 max-sm:my-1 px-14 max-sm:px-4">
+            <div><img class="max-sm:hidden" src="c2-assets/logo-header.png" alt=""><img src="c2-assets/logo-footer.png"
+                    alt="" class="hidden max-sm:inline-block"></div>
+            <div class="flex text-xl gap-8 ml-32 max-sm:hidden">
+                <div>Product</div>
+                <div>Services</div>
+                <div>Contact us</div>
+            </div>
+            <div class="flex gap-6 items-center">
+                <div class="max-sm:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                        <g fill="none" fill-rule="evenodd">
+                            <path
+                                d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                            <path fill="#0b0b0b"
+                                d="M10.5 2a8.5 8.5 0 1 0 5.262 15.176l3.652 3.652a1 1 0 0 0 1.414-1.414l-3.652-3.652A8.5 8.5 0 0 0 10.5 2M4 10.5a6.5 6.5 0 1 1 13 0a6.5 6.5 0 0 1-13 0" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="max-sm:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                        <path fill="#0b0b0b"
+                            d="M0 1h4.764l.545 2h18.078l-3.666 11H7.78l-.5 2H22v2H4.72l1.246-4.989L3.236 3H0zm7.764 11h10.515l2.334-7H5.855zM4 21a2 2 0 1 1 4 0a2 2 0 0 1-4 0m14 0a2 2 0 1 1 4 0a2 2 0 0 1-4 0" />
+                    </svg>
+                </div>
+                <div class="max-sm:hidden"><button
+                        class="text-xl border-3 px-7 py-3 border-[#179800] rounded-lg">Login</button></div>
+                <div class="max-sm:hidden"><button class="text-xl bg-[#179800] px-7 py-4 rounded-lg">Register</button>
+                </div>
+                <div class="hidden max-sm:inline-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                        <path fill="#179800"
+                            d="M4 7a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m0 5a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m0 5a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hero section -->
+        <section
+            class="my-[170px] max-sm:my-[100px] flex flex-col items-center text-center gap-8 bg-linear-to-t from-[#adff92] to-[#00000000] relative">
+            <div class="font-semibold text-6xl w-[60%] max-sm:w-full">Freshness <span class="text-[#179800]">You Can
+                    Count</span> On, Prices You’ll Love!</div>
+            <div class="text-[20px] text-[#111111] w-[60%] max-sm:w-[90%]">Shop your daily essentials at unbeatable
+                prices. From fresh produce to pantry staples, we’ve got you covered every day!</div>
+            <div class="z-0"><img src="c2-assets/hero-vegetables.png" alt=""></div>
+            <div class="absolute right-10 bottom-10 max-sm:bottom-88 max-sm:right-4 z-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 24 24">
+                    <path fill="#f00" d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z"
+                        transform="matrix(0 0 0 0 12 12)">
+                        <animateTransform id="svgSpinnersPulseRingsMultiple0" attributeName="transform"
+                            begin="0;svgSpinnersPulseRingsMultiple2.end" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="translate" values="12 12;0 0" />
+                        <animateTransform additive="sum" attributeName="transform"
+                            begin="0;svgSpinnersPulseRingsMultiple2.end" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="scale" values="0;1" />
+                        <animate attributeName="opacity" begin="0;svgSpinnersPulseRingsMultiple2.end" calcMode="spline"
+                            dur="1.44s" keySplines=".52,.6,.25,.99" values="1;0" />
+                    </path>
+                    <path fill="#f00" d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z"
+                        transform="matrix(0 0 0 0 12 12)">
+                        <animateTransform id="svgSpinnersPulseRingsMultiple1" attributeName="transform"
+                            begin="svgSpinnersPulseRingsMultiple0.begin+0.24s" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="translate" values="12 12;0 0" />
+                        <animateTransform additive="sum" attributeName="transform"
+                            begin="svgSpinnersPulseRingsMultiple0.begin+0.24s" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="scale" values="0;1" />
+                        <animate attributeName="opacity" begin="svgSpinnersPulseRingsMultiple0.begin+0.24s"
+                            calcMode="spline" dur="1.44s" keySplines=".52,.6,.25,.99" values="1;0" />
+                    </path>
+                    <path fill="#f00" d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z"
+                        transform="matrix(0 0 0 0 12 12)">
+                        <animateTransform id="svgSpinnersPulseRingsMultiple2" attributeName="transform"
+                            begin="svgSpinnersPulseRingsMultiple0.begin+0.48s" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="translate" values="12 12;0 0" />
+                        <animateTransform additive="sum" attributeName="transform"
+                            begin="svgSpinnersPulseRingsMultiple0.begin+0.48s" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="scale" values="0;1" />
+                        <animate attributeName="opacity" begin="svgSpinnersPulseRingsMultiple0.begin+0.48s"
+                            calcMode="spline" dur="1.44s" keySplines=".52,.6,.25,.99" values="1;0" />
+                    </path>
+                </svg>
+            </div>
+            <div class="absolute left-12 top-100 z-5 max-sm:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 24 24">
+                    <path fill="#f00" d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z"
+                        transform="matrix(0 0 0 0 12 12)">
+                        <animateTransform id="svgSpinnersPulseRingsMultiple0" attributeName="transform"
+                            begin="0;svgSpinnersPulseRingsMultiple2.end" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="translate" values="12 12;0 0" />
+                        <animateTransform additive="sum" attributeName="transform"
+                            begin="0;svgSpinnersPulseRingsMultiple2.end" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="scale" values="0;1" />
+                        <animate attributeName="opacity" begin="0;svgSpinnersPulseRingsMultiple2.end" calcMode="spline"
+                            dur="1.44s" keySplines=".52,.6,.25,.99" values="1;0" />
+                    </path>
+                    <path fill="#f00" d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z"
+                        transform="matrix(0 0 0 0 12 12)">
+                        <animateTransform id="svgSpinnersPulseRingsMultiple1" attributeName="transform"
+                            begin="svgSpinnersPulseRingsMultiple0.begin+0.24s" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="translate" values="12 12;0 0" />
+                        <animateTransform additive="sum" attributeName="transform"
+                            begin="svgSpinnersPulseRingsMultiple0.begin+0.24s" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="scale" values="0;1" />
+                        <animate attributeName="opacity" begin="svgSpinnersPulseRingsMultiple0.begin+0.24s"
+                            calcMode="spline" dur="1.44s" keySplines=".52,.6,.25,.99" values="1;0" />
+                    </path>
+                    <path fill="#f00" d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z"
+                        transform="matrix(0 0 0 0 12 12)">
+                        <animateTransform id="svgSpinnersPulseRingsMultiple2" attributeName="transform"
+                            begin="svgSpinnersPulseRingsMultiple0.begin+0.48s" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="translate" values="12 12;0 0" />
+                        <animateTransform additive="sum" attributeName="transform"
+                            begin="svgSpinnersPulseRingsMultiple0.begin+0.48s" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="scale" values="0;1" />
+                        <animate attributeName="opacity" begin="svgSpinnersPulseRingsMultiple0.begin+0.48s"
+                            calcMode="spline" dur="1.44s" keySplines=".52,.6,.25,.99" values="1;0" />
+                    </path>
+                </svg>
+            </div>
+            <div class="absolute left-10 bottom-10 z-5 max-sm:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 24 24">
+                    <path fill="#f00" d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z"
+                        transform="matrix(0 0 0 0 12 12)">
+                        <animateTransform id="svgSpinnersPulseRingsMultiple0" attributeName="transform"
+                            begin="0;svgSpinnersPulseRingsMultiple2.end" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="translate" values="12 12;0 0" />
+                        <animateTransform additive="sum" attributeName="transform"
+                            begin="0;svgSpinnersPulseRingsMultiple2.end" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="scale" values="0;1" />
+                        <animate attributeName="opacity" begin="0;svgSpinnersPulseRingsMultiple2.end" calcMode="spline"
+                            dur="1.44s" keySplines=".52,.6,.25,.99" values="1;0" />
+                    </path>
+                    <path fill="#f00" d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z"
+                        transform="matrix(0 0 0 0 12 12)">
+                        <animateTransform id="svgSpinnersPulseRingsMultiple1" attributeName="transform"
+                            begin="svgSpinnersPulseRingsMultiple0.begin+0.24s" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="translate" values="12 12;0 0" />
+                        <animateTransform additive="sum" attributeName="transform"
+                            begin="svgSpinnersPulseRingsMultiple0.begin+0.24s" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="scale" values="0;1" />
+                        <animate attributeName="opacity" begin="svgSpinnersPulseRingsMultiple0.begin+0.24s"
+                            calcMode="spline" dur="1.44s" keySplines=".52,.6,.25,.99" values="1;0" />
+                    </path>
+                    <path fill="#f00" d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z"
+                        transform="matrix(0 0 0 0 12 12)">
+                        <animateTransform id="svgSpinnersPulseRingsMultiple2" attributeName="transform"
+                            begin="svgSpinnersPulseRingsMultiple0.begin+0.48s" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="translate" values="12 12;0 0" />
+                        <animateTransform additive="sum" attributeName="transform"
+                            begin="svgSpinnersPulseRingsMultiple0.begin+0.48s" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="scale" values="0;1" />
+                        <animate attributeName="opacity" begin="svgSpinnersPulseRingsMultiple0.begin+0.48s"
+                            calcMode="spline" dur="1.44s" keySplines=".52,.6,.25,.99" values="1;0" />
+                    </path>
+                </svg>
+            </div>
+            <div class="absolute left-30 bottom-72 z-5 max-sm:bottom-4 max-sm:left-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 24 24">
+                    <path fill="#f00" d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z"
+                        transform="matrix(0 0 0 0 12 12)">
+                        <animateTransform id="svgSpinnersPulseRingsMultiple0" attributeName="transform"
+                            begin="0;svgSpinnersPulseRingsMultiple2.end" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="translate" values="12 12;0 0" />
+                        <animateTransform additive="sum" attributeName="transform"
+                            begin="0;svgSpinnersPulseRingsMultiple2.end" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="scale" values="0;1" />
+                        <animate attributeName="opacity" begin="0;svgSpinnersPulseRingsMultiple2.end" calcMode="spline"
+                            dur="1.44s" keySplines=".52,.6,.25,.99" values="1;0" />
+                    </path>
+                    <path fill="#f00" d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z"
+                        transform="matrix(0 0 0 0 12 12)">
+                        <animateTransform id="svgSpinnersPulseRingsMultiple1" attributeName="transform"
+                            begin="svgSpinnersPulseRingsMultiple0.begin+0.24s" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="translate" values="12 12;0 0" />
+                        <animateTransform additive="sum" attributeName="transform"
+                            begin="svgSpinnersPulseRingsMultiple0.begin+0.24s" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="scale" values="0;1" />
+                        <animate attributeName="opacity" begin="svgSpinnersPulseRingsMultiple0.begin+0.24s"
+                            calcMode="spline" dur="1.44s" keySplines=".52,.6,.25,.99" values="1;0" />
+                    </path>
+                    <path fill="#f00" d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z"
+                        transform="matrix(0 0 0 0 12 12)">
+                        <animateTransform id="svgSpinnersPulseRingsMultiple2" attributeName="transform"
+                            begin="svgSpinnersPulseRingsMultiple0.begin+0.48s" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="translate" values="12 12;0 0" />
+                        <animateTransform additive="sum" attributeName="transform"
+                            begin="svgSpinnersPulseRingsMultiple0.begin+0.48s" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="scale" values="0;1" />
+                        <animate attributeName="opacity" begin="svgSpinnersPulseRingsMultiple0.begin+0.48s"
+                            calcMode="spline" dur="1.44s" keySplines=".52,.6,.25,.99" values="1;0" />
+                    </path>
+                </svg>
+            </div>
+            <div class="absolute right-10 top-[460px] z-5 max-sm:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 24 24">
+                    <path fill="#f00" d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z"
+                        transform="matrix(0 0 0 0 12 12)">
+                        <animateTransform id="svgSpinnersPulseRingsMultiple0" attributeName="transform"
+                            begin="0;svgSpinnersPulseRingsMultiple2.end" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="translate" values="12 12;0 0" />
+                        <animateTransform additive="sum" attributeName="transform"
+                            begin="0;svgSpinnersPulseRingsMultiple2.end" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="scale" values="0;1" />
+                        <animate attributeName="opacity" begin="0;svgSpinnersPulseRingsMultiple2.end" calcMode="spline"
+                            dur="1.44s" keySplines=".52,.6,.25,.99" values="1;0" />
+                    </path>
+                    <path fill="#f00" d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z"
+                        transform="matrix(0 0 0 0 12 12)">
+                        <animateTransform id="svgSpinnersPulseRingsMultiple1" attributeName="transform"
+                            begin="svgSpinnersPulseRingsMultiple0.begin+0.24s" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="translate" values="12 12;0 0" />
+                        <animateTransform additive="sum" attributeName="transform"
+                            begin="svgSpinnersPulseRingsMultiple0.begin+0.24s" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="scale" values="0;1" />
+                        <animate attributeName="opacity" begin="svgSpinnersPulseRingsMultiple0.begin+0.24s"
+                            calcMode="spline" dur="1.44s" keySplines=".52,.6,.25,.99" values="1;0" />
+                    </path>
+                    <path fill="#f00" d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z"
+                        transform="matrix(0 0 0 0 12 12)">
+                        <animateTransform id="svgSpinnersPulseRingsMultiple2" attributeName="transform"
+                            begin="svgSpinnersPulseRingsMultiple0.begin+0.48s" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="translate" values="12 12;0 0" />
+                        <animateTransform additive="sum" attributeName="transform"
+                            begin="svgSpinnersPulseRingsMultiple0.begin+0.48s" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="scale" values="0;1" />
+                        <animate attributeName="opacity" begin="svgSpinnersPulseRingsMultiple0.begin+0.48s"
+                            calcMode="spline" dur="1.44s" keySplines=".52,.6,.25,.99" values="1;0" />
+                    </path>
+                </svg>
+            </div>
+            <div class="absolute right-12 top-[650px] z-5 max-sm:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 24 24">
+                    <path fill="#f00" d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z"
+                        transform="matrix(0 0 0 0 12 12)">
+                        <animateTransform id="svgSpinnersPulseRingsMultiple0" attributeName="transform"
+                            begin="0;svgSpinnersPulseRingsMultiple2.end" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="translate" values="12 12;0 0" />
+                        <animateTransform additive="sum" attributeName="transform"
+                            begin="0;svgSpinnersPulseRingsMultiple2.end" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="scale" values="0;1" />
+                        <animate attributeName="opacity" begin="0;svgSpinnersPulseRingsMultiple2.end" calcMode="spline"
+                            dur="1.44s" keySplines=".52,.6,.25,.99" values="1;0" />
+                    </path>
+                    <path fill="#f00" d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z"
+                        transform="matrix(0 0 0 0 12 12)">
+                        <animateTransform id="svgSpinnersPulseRingsMultiple1" attributeName="transform"
+                            begin="svgSpinnersPulseRingsMultiple0.begin+0.24s" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="translate" values="12 12;0 0" />
+                        <animateTransform additive="sum" attributeName="transform"
+                            begin="svgSpinnersPulseRingsMultiple0.begin+0.24s" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="scale" values="0;1" />
+                        <animate attributeName="opacity" begin="svgSpinnersPulseRingsMultiple0.begin+0.24s"
+                            calcMode="spline" dur="1.44s" keySplines=".52,.6,.25,.99" values="1;0" />
+                    </path>
+                    <path fill="#f00" d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z"
+                        transform="matrix(0 0 0 0 12 12)">
+                        <animateTransform id="svgSpinnersPulseRingsMultiple2" attributeName="transform"
+                            begin="svgSpinnersPulseRingsMultiple0.begin+0.48s" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="translate" values="12 12;0 0" />
+                        <animateTransform additive="sum" attributeName="transform"
+                            begin="svgSpinnersPulseRingsMultiple0.begin+0.48s" calcMode="spline" dur="1.44s"
+                            keySplines=".52,.6,.25,.99" type="scale" values="0;1" />
+                        <animate attributeName="opacity" begin="svgSpinnersPulseRingsMultiple0.begin+0.48s"
+                            calcMode="spline" dur="1.44s" keySplines=".52,.6,.25,.99" values="1;0" />
+                    </path>
+                </svg>
+            </div>
+
+            <div class="review">
+                <p class="font-semibold">This is my go to store for veggies.</p>
+                <p class="inline ml-37 italic text-gray-500">-Anna Frank</p>
+            </div>
+            <div class="review-2">
+                <p class="font-semibold">Deserve 5 stars for their service</p>
+                <p class="inline ml-37 italic text-gray-500">-Jhon Wick</p>
+            </div>
+            <div class="review-3">
+                <p class="font-semibold">Awesome. Keep up the nice work</p>
+                <p class="inline ml-37 italic text-gray-500">-John Smith</p>
+            </div>
+            <div class="review-4">
+                <p class="font-semibold">Thanks for the fresh veggies</p>
+                <p class="inline ml-37 italic text-gray-500">-Skyler White</p>
+            </div>
+            <div class="review-5">
+                <p class="font-semibold">Totally recommanded.</p>
+                <p class="inline ml-37 italic text-gray-500">-Faysal Hasan</p>
+            </div>
+            <div class="review-6">
+                <p class="font-semibold">Thanks for the delivery. It's great.</p>
+                <p class="inline ml-37 italic text-gray-500">-Sami Hamdi</p>
+            </div>
+        </section>
+
+        <!-- Cards -->
+        <section class="my-9 max-sm:my-1 px-14 max-sm:px-4">
+            <div class="text-4xl text-[#179800] font-bold mb-10 max-sm:text-center">Services</div>
+            <div class="flex gap-10 max-sm:flex-col">
+                <div class="flex flex-col items-center bg-[#cdfbf9] px-7 py-10 gap-6 rounded-2xl">
+                    <div class="bg-white rounded-full p-4"><img src="c2-assets/service.png" alt=""></div>
+                    <h2 class="font-semibold text-3xl">24/7 Services</h2>
+                    <p class="text-[20px] text-[#666666] text-center">We are available 24/7 to ensure you have enough
+                        supply of fresh food. We provide fast and safe delivery to your door.</p>
+                </div>
+                <div class="flex flex-col items-center bg-[#fbd3cd] px-7 py-10 gap-6 rounded-2xl">
+                    <div class="bg-white rounded-full p-4"><img src="c2-assets/delivery.png" alt=""></div>
+                    <h2 class="font-semibold text-3xl">Fast Delivery</h2>
+                    <p class="text-[20px] text-[#666666]">Want to get fast delivery of fresh veggies? We are here to
+                        meet your demand and deliver our product to your door.</p>
+                </div>
+                <div class="flex flex-col items-center bg-[#cffbcd] px-7 py-10 gap-6 rounded-2xl">
+                    <div class="bg-white rounded-full p-4"><img src="c2-assets/healthy.png" alt=""></div>
+                    <h2 class="font-semibold text-3xl">Healthy Products</h2>
+                    <p class="text-[20px] text-[#666666]">Our veggies are produced oraganically without any artificial
+                        chemicals involved. So you can consume them without worry.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- popular -->
+        <section class="bg-[#e7f3e5] my-25 p-[140px] max-sm:p-4">
+            <div class="font-bold text-[#179800] text-4xl mb-[48px]">Popular Products</div>
+            <div class="flex gap-5 max-sm:flex-col">
+                <div
+                    class="relative flex flex-col gap-5  drop-shadow-[0_0_3px_rgba(0,0,0,0.2)] bg-[linear-gradient(135deg,#53DB3A,white)] p-20 rounded-2xl pl-10">
+                    <p class="text-white text-3xl font-semibold">30% off</p>
+                    <p class="text-[#424242] w-4/5">Discover a world of treats, toys, and essentials handpicked for</p>
+                    <button class="px-8 py-3 bg-white rounded-lg w-max">Buy Now</button>
+                    <img class="absolute bottom-0 right-0" src="c2-assets/vegetable-offer.png" alt="">
+                </div>
+                <div class="grid grid-cols-3 grid-rows-3 gap-5">
+                    <div class="flex bg-white items-center py-1 px-4 rounded-2xl drop-shadow-[0_0_5px_rgba(0,0,0,0.2)]">
+                        <div class="bg-[#e9e1e1] w-17 h-17 rounded-2xl"><img src="c2-assets/potato.png" alt=""></div>
+                        <div class="flex flex-col gap-2 px-2">
+                            <div class="flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#fff107"
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
+                                </svg><span>4.5</span>
+                            </div>
+                            <p class="w-max">Onion 1KG</p>
+                            <p>$29.99</p>
+                        </div>
+                    </div>
+                    <div class="flex bg-white items-center py-1 px-4 rounded-2xl drop-shadow-[0_0_5px_rgba(0,0,0,0.2)]">
+                        <div class="bg-[#e9e1e1] w-17 h-17 rounded-2xl"><img src="c2-assets/onion.png" alt=""></div>
+                        <div class="flex flex-col gap-2 px-2">
+                            <div class="flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#fff107"
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
+                                </svg><span>4.5</span>
+                            </div>
+                            <p class="w-max">Onion 1KG</p>
+                            <p>$29.99</p>
+                        </div>
+                    </div>
+                    <div class="flex bg-white items-center py-1 px-4 rounded-2xl drop-shadow-[0_0_5px_rgba(0,0,0,0.2)]">
+                        <div class="bg-[#e9e1e1] w-17 h-17 rounded-2xl flex items-center"><img
+                                src="c2-assets/tomato.png" alt=""></div>
+                        <div class="flex flex-col gap-2 px-2">
+                            <div class="flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#fff107"
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
+                                </svg><span>4.5</span>
+                            </div>
+                            <p class="w-max">Onion 1KG</p>
+                            <p>$29.99</p>
+                        </div>
+                    </div>
+                    <div class="flex bg-white items-center py-1 px-4 rounded-2xl drop-shadow-[0_0_5px_rgba(0,0,0,0.2)]">
+                        <div class="bg-[#e9e1e1] w-17 h-17 rounded-2xl"><img src="c2-assets/onion.png" alt=""></div>
+                        <div class="flex flex-col gap-2 px-2">
+                            <div class="flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#fff107"
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
+                                </svg><span>4.5</span>
+                            </div>
+                            <p class="w-max">Onion 1KG</p>
+                            <p>$29.99</p>
+                        </div>
+                    </div>
+                    <div class="flex bg-white items-center py-1 px-4 rounded-2xl drop-shadow-[0_0_5px_rgba(0,0,0,0.2)]">
+                        <div class="bg-[#e9e1e1] w-17 h-17 rounded-2xl flex items-center"><img
+                                src="c2-assets/tomato.png" alt=""></div>
+                        <div class="flex flex-col gap-2 px-2">
+                            <div class="flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#fff107"
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
+                                </svg><span>4.5</span>
+                            </div>
+                            <p class="w-max">Onion 1KG</p>
+                            <p>$29.99</p>
+                        </div>
+                    </div>
+                    <div class="flex bg-white items-center py-1 px-4 rounded-2xl drop-shadow-[0_0_5px_rgba(0,0,0,0.2)]">
+                        <div class="bg-[#e9e1e1] w-17 h-17 rounded-2xl"><img src="c2-assets/potato.png" alt=""></div>
+                        <div class="flex flex-col gap-2 px-2">
+                            <div class="flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#fff107"
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
+                                </svg><span>4.5</span>
+                            </div>
+                            <p class="w-max">Onion 1KG</p>
+                            <p>$29.99</p>
+                        </div>
+                    </div>
+                    <div class="flex bg-white items-center py-1 px-4 rounded-2xl drop-shadow-[0_0_5px_rgba(0,0,0,0.2)]">
+                        <div class="bg-[#e9e1e1] w-17 h-17 rounded-2xl"><img src="c2-assets/potato.png" alt=""></div>
+                        <div class="flex flex-col gap-2 px-2">
+                            <div class="flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#fff107"
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
+                                </svg><span>4.5</span>
+                            </div>
+                            <p class="w-max">Onion 1KG</p>
+                            <p>$29.99</p>
+                        </div>
+                    </div>
+                    <div class="flex bg-white items-center py-1 px-4 rounded-2xl drop-shadow-[0_0_5px_rgba(0,0,0,0.2)]">
+                        <div class="bg-[#e9e1e1] w-17 h-17 rounded-2xl flex items-center"><img
+                                src="c2-assets/tomato.png" alt=""></div>
+                        <div class="flex flex-col gap-2 px-2">
+                            <div class="flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#fff107"
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
+                                </svg><span>4.5</span>
+                            </div>
+                            <p class="w-max">Onion 1KG</p>
+                            <p>$29.99</p>
+                        </div>
+                    </div>
+                    <div class="flex bg-white items-center py-1 px-4 rounded-2xl drop-shadow-[0_0_5px_rgba(0,0,0,0.2)]">
+                        <div class="bg-[#e9e1e1] w-17 h-17 rounded-2xl"><img src="c2-assets/onion.png" alt=""></div>
+                        <div class="flex flex-col gap-2 px-2">
+                            <div class="flex items-center gap-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#fff107"
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
+                                </svg><span>4.5</span>
+                            </div>
+                            <p class="w-max">Onion 1KG</p>
+                            <p>$29.99</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- offer -->
+        <section class="my-9 max-sm:my-1 px-14 max-sm:px-4">
+            <div class="font-semibold text-4xl text-[#179800] mb-10">Arrival & Offers</div>
+            <div class="flex gap-5 max-sm:flex-col">
+                <div class="flex bg-[#115414] p-7 rounded-2xl grow-2 gap-2">
+                    <div class="flex flex-col gap-5 justify-center items-start">
+                        <div><img src="c2-assets/dawat-logo.png" alt=""></div>
+                        <div class="poppins text-white bg-[#63B76D] rounded-2xl px-8 py-4 w-max">Coock Exotic Dishes
+                        </div>
+                        <div class="text-5xl text-white">Up to <span class="font-bold">20% OFF</span></div>
+                    </div>
+                    <div><img src="c2-assets/dawat-mock-up.png" alt=""></div>
+                </div>
+                <div class="flex bg-[#102861] p-7 rounded-2xl grow-1 gap-3">
+                    <div class="flex flex-col items-start justify-center gap-5">
+                        <div><img src="c2-assets/india-gate-logo.png" alt=""></div>
+                        <div class="bg-[#2A4D97] poppins text-white px-7 py-4 rounded-2xl">World's No.1 Rice</div>
+                        <div class="text-5xl text-white">Up to <span class="font-bold">40% OFF</span></div>
+                    </div>
+                    <div><img src="c2-assets/india-gate-mock-up.png" alt=""></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- review -->
+        <section class="mt-35 max-sm:my-25 px-14 max-sm:px-4">
+            <div class="font-semibold text-4xl text-[#179800] mb-45">What Our Customers Are Saying</div>
+            <div class="flex gap-3 max-sm:flex-col">
+                <div class="flex flex-col items-center bg-[#d8e2dd] gap-3 p-7 relative rounded-2xl">
+                    <div class="absolute w-[350px] -top-43"><img src="c2-assets/output-onlinepngtools.png" alt=""></div>
+                    <p class="font-semibold text-2xl pt-30">Anna Frank</p>
+                    <p class="text-[#4c4c4c]">I have been using their service for 2 years now. And I can comfortably say
+                        that they are the best in the market. Every product is fresh and organic. Never face any hassle.
+                        Also delivery is very fast.</p>
+                    <div class="flex gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                            <path fill="#ffd800"
+                                d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                            <path fill="#ffd800"
+                                d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                            <path fill="#ffd800"
+                                d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                            <path fill="#ffd800"
+                                d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                            <path fill="#ffd800"
+                                d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center bg-[#d8e2dd] gap-3 p-7 relative rounded-2xl max-sm:mt-35">
+                    <div class="absolute w-[350px] -top-43"><img src="c2-assets/output-onlinepngtools.png" alt=""></div>
+                    <p class="font-semibold text-2xl pt-30">Skyler White</p>
+                    <p class="text-[#4c4c4c]">I have been using their service for 2 years now. And I can comfortably say
+                        that they are the best in the market. Every product is fresh and organic. Never face any hassle.
+                        Also delivery is very fast.</p>
+                    <div class="flex gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                            <path fill="#ffd800"
+                                d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                            <path fill="#ffd800"
+                                d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                            <path fill="#ffd800"
+                                d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                            <path fill="#ffd800"
+                                d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                            <path fill="#ffd800"
+                                d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center bg-[#d8e2dd] gap-3 p-7 relative rounded-2xl max-sm:mt-35">
+                    <div class="absolute w-[350px] -top-43"><img src="c2-assets/output-onlinepngtools.png" alt=""></div>
+                    <p class="font-semibold text-2xl pt-30">Marry</p>
+                    <p class="text-[#4c4c4c]">I have been using their service for 2 years now. And I can comfortably say
+                        that they are the best in the market. Every product is fresh and organic. Never face any hassle.
+                        Also delivery is very fast.</p>
+                    <div class="flex gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                            <path fill="#ffd800"
+                                d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                            <path fill="#ffd800"
+                                d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                            <path fill="#ffd800"
+                                d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                            <path fill="#ffd800"
+                                d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                            <path fill="#ffd800"
+                                d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z" />
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- footer -->
+        <div class="mt-[400px] relative flex flex-col items-center">
+            <div class="my-9 max-sm:my-1 mx-14 max-sm:px-4 flex max-sm:flex-col justify-around bg-[#EFEBE3] p-18 rounded-3xl absolute -top-[250px] max-sm:-top-[350px]">
+                <div><img src="c2-assets/vegetable-busket.png" alt=""></div>
+                <div class="flex flex-col gap-7 max-sm:items-center">
+                    <h2 class="font-semibold text-4xl max-sm:text-center">Get Grocery News!</h2>
+                    <p class="text-[20px] max-sm:text-center">Exclusive training tips, ticks, product deals and more.</p>
+                    <input placeholder="Enter Email..." type="text" class="bg-white h-14 w-3/4 max-sm:w-[100%] rounded-xl pl-5">
+                    <button class="bg-[#179800] rounded-xl px-8 py-4 text-white text-[20px] w-max">Subscribe</button>
+                </div>
+            </div>
+            <div class="bg-[#179800] flex max-sm:flex-col p-[150px] pt-[450px] max-sm:p-[50px] max-sm:pt-[400px] justify-between max-sm:items-start items-center w-screen">
+                <div class="flex flex-col w-[30%] max-sm:w-full gap-7">
+                    <div><img src="c2-assets/logo-footer.png" alt=""></div>
+                    <p class="text-white text-[20px]">Discover a world of treats, toys, and essentials handpicked for
+                        your furry friends</p>
+                </div>
+
+                <div class="flex flex-col gap-7 text-white text-[20px] max-sm:my-15">
+                    <div>Products</div>
+                    <div>Services</div>
+                    <div>Contact Us</div>
+                </div>
+                <div>
+                    <div class="text-white text-[20px] mb-5 max-sm:mt-4">Follow Us</div>
+                    <div class="flex gap-5 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m10 15l5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.2 4.2 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.52 8.52 0 0 1-5.33 1.84q-.51 0-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 2.04c-5.5 0-10 4.49-10 10.02c0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89c1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>

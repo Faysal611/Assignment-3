@@ -1,0 +1,196 @@
+.sora{
+    font-family: "Sora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.poppins {
+    font-family: "Poppins", serif;
+    font-style: normal;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+.white-logo {
+    display: none;
+}
+
+.review {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    left: 65px;
+    bottom: 65px;
+    z-index: 1;
+    animation: card;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    width: 298px;
+    height: 68px;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+}
+.review-2 {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    right: 65px;
+    top: 420px;
+    z-index: 1;
+    animation: card;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    width: 298px;
+    height: 68px;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1.5s;
+}
+.review-3 {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    left: 145px;
+    top: 710px;
+    z-index: 1;
+    animation: card;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    width: 298px;
+    height: 68px;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+}
+.review-4 {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    right: 65px;
+    top: 670px;
+    z-index: 1;
+    animation: card;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    width: 298px;
+    height: 68px;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+}
+.review-5 {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    left: 65px;
+    top: 420px;
+    z-index: 1;
+    animation: card;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    width: 298px;
+    height: 68px;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1.5s;
+}
+.review-6 {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    right: 65px;
+    bottom: 60px;
+    z-index: 1;
+    animation: card;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    width: 298px;
+    height: 68px;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+}
+
+.review p {
+    animation: card-text;
+    animation-duration: 5s;
+    opacity: 0;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+.review-2 p {
+    animation: card-text;
+    animation-duration: 5s;
+    opacity: 0;
+    animation-iteration-count: infinite;
+    animation-delay: 1.5s;
+}
+.review-3 p {
+    animation: card-text;
+    animation-duration: 5s;
+    opacity: 0;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+.review-4 p {
+    animation: card-text;
+    animation-duration: 5s;
+    opacity: 0;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+.review-5 p {
+    animation: card-text;
+    animation-duration: 5s;
+    opacity: 0;
+    animation-iteration-count: infinite;
+    animation-delay: 1.5s;
+}
+.review-6 p {
+    animation: card-text;
+    animation-duration: 5s;
+    opacity: 0;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+@keyframes card {
+    0% {opacity: 0; width: 0px; height: 0px;}
+    30% {opacity: 1; width: 298px; height: 68px;} 
+    80% {opacity: 1; width: 298px; height: 68px;} 
+    100% {opacity: 0; width: 0px; height: 0px;}
+}
+
+@keyframes card-text {
+    30% {opacity: 0;}
+    35% {opacity: 1;}
+    75% {opacity: 1;}
+    80% {opacity: 0;}
+
+}
+
+@media screen and (max-width: 640px) {
+    .review {
+        bottom: 35px;
+        left: 24px;
+    }
+    .review-2 {
+        right: 40px;
+        top: 460px;
+    }
+    .review-3 {
+        display: none;
+    }
+    .review-4 {
+        display: none;
+    }
+    .review-5 {
+        display: none;
+    }
+    .review-6 {
+        display: none;
+    }
+}
